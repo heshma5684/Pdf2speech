@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadFormal">
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:background="@drawable/play"/>
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=""
+        tools:layout_editor_absoluteX="104dp"
+        android:layout_marginLeft="20dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:background="@drawable/pause"/>
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=""
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/stop"/>
+
+    <Button
+        android:id="@+id/Restart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=""
+        tools:layout_editor_absoluteX="279dp"
+        android:layout_marginLeft="30dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:background="@drawable/repl"/>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginLeft="-300dp"/>
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="To Home"
+        android:layout_marginLeft="-100dp"/>
+
+</LinearLayout>
